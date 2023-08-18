@@ -22,7 +22,7 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
-  const locationOfExpenditure = ["jaipur", "kanpur", "varanasi", "gurugram"];
+  const location = ["jaipur", "kanpur", "varanasi", "gurugram"];
   return (
     <div>
       <h2>Let's get started!</h2>
@@ -30,25 +30,25 @@ function App() {
         title={expenses[0].title}
         amount={expenses[0].amount}
         date={expenses[0].date}
-        locationOfExpenditure={locationOfExpenditure[0]}
+        location={location[0]}
       ></ExpenseItem>
       <ExpenseItem
         title={expenses[1].title}
         amount={expenses[1].amount}
         date={expenses[1].date}
-        locationOfExpenditure={locationOfExpenditure[1]}
+        location={location[1]}
       ></ExpenseItem>
       <ExpenseItem
         title={expenses[2].title}
         amount={expenses[2].amount}
         date={expenses[2].date}
-        locationOfExpenditure={locationOfExpenditure[2]}
+        location={location[2]}
       ></ExpenseItem>
       <ExpenseItem
         title={expenses[3].title}
         amount={expenses[3].amount}
         date={expenses[3].date}
-        locationOfExpenditure={locationOfExpenditure[3]}
+        location={location[3]}
       ></ExpenseItem>
     </div>
   );
