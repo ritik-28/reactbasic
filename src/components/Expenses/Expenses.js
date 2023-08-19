@@ -1,9 +1,9 @@
 import ExpenseItem from "./ExpenseItem";
 import React from "react";
-import Card from "./Card";
+import Card from "../UI/Card";
 import "./Expenses.css";
 
-function Expenses(props) {
+const Expenses = (props) => {
   const location = ["jaipur", "kanpur", "varanasi", "gurugram"];
   return (
     <Card className="expenses">
@@ -33,6 +33,6 @@ function Expenses(props) {
       ></ExpenseItem>
     </Card>
   );
-}
+};
 
 export default Expenses;

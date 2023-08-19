@@ -1,8 +1,8 @@
 // import Card from "./components/Card";
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 import React from "react";
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -24,18 +24,18 @@ function App() {
       date: new Date(2021, 5, 12),
     },
   ];
-  return React.createElement(
-    "div",
-    { className: "expenses" },
-    React.createElement("h2", {}, "Lets get started!"),
-    React.createElement(Expenses, { expenses: expenses })
-  );
-  // return (
-  //   <div className="expenses">
-  //     <h2>Lets get started!</h2>
-  //     <Expenses expenses={expenses}></Expenses>
-  //   </div>
+  // return React.createElement(
+  //   "div",
+  //   { className: "expenses" },
+  //   React.createElement("h2", {}, "Lets get started!"),
+  //   React.createElement(Expenses, { expenses: expenses })
   // );
-}
+  return (
+    <div className="expenses">
+      <h2>Lets get started!</h2>
+      <Expenses expenses={expenses}></Expenses>
+    </div>
+  );
+};
 
 export default App;
