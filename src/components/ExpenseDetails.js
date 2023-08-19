@@ -1,3 +1,6 @@
+import React from "react";
+import "./ExpenseItem.css";
+
 function ExpenseDetails(props) {
   return (
     <div className="expense-item__description">
