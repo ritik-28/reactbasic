@@ -16,6 +16,15 @@ const ExpenseItem = (props) => {
   //     )
   //   );
 
+  const clickHandler = () => {
+    console.log("clicked!!!!!!!!");
+  };
+
+  const deleteExpenseHandler = (e) => {
+    console.log(e.target.parentElement.remove());
+    console.log("this expense deleted");
+  };
+
   return (
     <div className="expense-item">
       <ExpenseDate date={props.date} />
@@ -24,6 +33,8 @@ const ExpenseItem = (props) => {
         amount={props.amount}
         location={props.location}
       />
+      <button onClick={clickHandler}>changed title!!!!</button>
+      <button onClick={deleteExpenseHandler}>Delete</button>
     </div>
   );
 };
