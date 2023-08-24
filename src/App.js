@@ -1,6 +1,5 @@
 // import Card from "./components/Card";
 import Expenses from "./components/Expenses/Expenses";
-import React, { useState } from "react";
 import NewExpense from "./components/NewExpense/NewExpense";
 
 const App = () => {
